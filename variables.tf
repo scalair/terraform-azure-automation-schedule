@@ -65,3 +65,9 @@ variable "parameters" {
   description = "(Optional) A map of key/value pairs corresponding to the arguments that can be passed to the Runbook. Changing this forces a new resource to be created."
   default = {}
 }
+
+variable "interval" {
+  type        = number
+  description = "(Optional) The number of frequencys between runs. Only valid when frequency is Day, Hour, Week, or Month and defaults to 1."
+  default = 1
+}

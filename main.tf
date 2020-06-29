@@ -7,7 +7,7 @@ resource "azurerm_automation_schedule" "schedule" {
   resource_group_name     = var.resource_group_name
   automation_account_name = var.automation_account_name
   frequency               = var.frequency
-  #interval                = var.interval
+  interval                = var.interval
   start_time              = var.start_time
   expiry_time             = var.expiry_time
   timezone                = var.timezone
