@@ -1,7 +1,3 @@
-provider "azurerm" {
-  features {}
-}
-
 resource "azurerm_automation_schedule" "schedule" {
   name                    = var.name
   resource_group_name     = var.resource_group_name
