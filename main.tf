@@ -4,7 +4,7 @@ resource "azurerm_automation_schedule" "schedule" {
   automation_account_name = var.automation_account_name
   frequency               = var.frequency
   interval                = var.interval
-  start_time              = formatdate("YYYY-MM-DD'T'hh:mm:ss'Z'", timeadd(timestamp(), "15m"))
+  start_time              = var.start_time == "" ? null : var.start_time
   expiry_time             = var.expiry_time
   timezone                = var.timezone
   week_days               = var.week_days
