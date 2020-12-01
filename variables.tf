@@ -19,6 +19,7 @@ variable "frequency" {
 variable "start_time" {
   type        = string
   description = "(Optional) Start time of the schedule. Must be at least five minutes in the future. Defaults to seven minutes in the future from the time the resource is created."
+  default     = ""
 }
 
 variable "expiry_time" {
