@@ -36,13 +36,13 @@ variable "timezone" {
 variable "week_days" {
   type        = list
   description = "(Optional) List of days of the week that the job should execute on. Only valid when frequency is Week."
-  default = []
+  default     = null
 }
 
 variable "month_days" {
   type        = list
   description = "(Optional) List of days of the month that the job should execute on. Must be between 1 and 31. -1 for last day of the month. Only valid when frequency is Month."
-  default = []
+  default     = null
 }
 
 variable "description" {
@@ -70,5 +70,5 @@ variable "parameters" {
 variable "interval" {
   type        = number
   description = "(Optional) The number of frequencys between runs. Only valid when frequency is Day, Hour, Week, or Month and defaults to 1."
-  default = 1
+  default     = null
 }
