@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.0.3
+
+### Fixed
+
+- Optional variables: `week_days`, `month_days` and `interval`
+
 ## v2.0.2
 
 ### Fixed
